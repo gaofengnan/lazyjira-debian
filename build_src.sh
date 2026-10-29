@@ -22,7 +22,7 @@ echo "Creating the source package for lazyjira ${lazyjira_VERSION}-${BUILD_VERSI
 # archive download is byte-identical next time. Reuse the earlier release's copy.
 if [ ! -f "$ORIG_TARBALL" ]; then
     for ((b = BUILD_VERSION - 1; b >= 1; b--)); do
-        if wget -q "https://github.com/dariogriffo/lazyjira-debian/releases/download/${lazyjira_VERSION}%2B${b}/${ORIG_TARBALL}" -O "$ORIG_TARBALL"; then
+        if wget -q "https://github.com/gaofengnan/lazyjira-debian/releases/download/${lazyjira_VERSION}%2B${b}/${ORIG_TARBALL}" -O "$ORIG_TARBALL"; then
             echo "  Reusing $ORIG_TARBALL from release ${lazyjira_VERSION}+${b}"
             break
         fi
@@ -43,7 +43,7 @@ else
 fi
 
 build_source_package() {
-    local FULL_VERSION="${lazyjira_VERSION}-${BUILD_VERSION}~griffo"
+    local FULL_VERSION="${lazyjira_VERSION}-${BUILD_VERSION}~gaofn"
 
     echo "  Building source package ${FULL_VERSION}..."
 
@@ -61,7 +61,7 @@ lazyjira (${FULL_VERSION}) stable; urgency=medium
 
   * New upstream release ${lazyjira_VERSION}.
 
- -- Dario Griffo <dariogriffo@gmail.com>  $(date -R)
+ -- Fengnan Gao <gao.fengnan@gmail.com>  $(date -R)
 EOC
 
     # Build source package (.dsc + .debian.tar.xz); reuses existing .orig.tar.gz

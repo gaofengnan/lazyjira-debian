@@ -86,4 +86,4 @@ lazyjira (FULL_VERSION) stable; urgency=low
   installed as /usr/share/doc/lazyjira/changelog.gz and lives at
   https://github.com/textfuel/lazyjira/blob/main/CHANGELOG.md
 
- -- Dario Griffo <dariogriffo@gmail.com>  Thu, 08 Oct 2026 09:47:25 +0100
+ -- Fengnan Gao <gao.fengnan@gmail.com>  Thu, 08 Oct 2026 09:47:25 +0100

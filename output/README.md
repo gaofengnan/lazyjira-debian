@@ -2,6 +2,8 @@
 
 # lazyjira
 
+> Fork of [dariogriffo/lazyjira-debian](https://github.com/dariogriffo/lazyjira-debian) (MIT); the original packaging is by Dario Griffo. Served at [deb.gaofn.xyz](https://deb.gaofn.xyz) for Debian 12 (bookworm) and 13 (trixie).
+
 **Terminal UI for Jira. Like lazygit, but for Jira.**
 
 ![GitHub Release](https://img.shields.io/github/v/release/textfuel/lazyjira)
